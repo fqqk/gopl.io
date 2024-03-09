@@ -25,10 +25,12 @@ func main() {
 	// error: nil
 	var s, sep string
 	for i := 1; i < len(os.Args); i++ {
+		// +演算子は文字列に対しては"連結"を意味する
+		// +=演算子は文字列に対しては"連結代入"を意味する s = s + sep + os.Args[i]と同じ
 		s += sep + os.Args[i]
 		sep = " "
 	}
-	fmt.Println(s)
+	fmt.Println(s) // 文字列sは""から始まり、os.Argsの要素を" "で連結した文字列が出力される
 }
 
 //!-
