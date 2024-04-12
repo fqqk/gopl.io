@@ -392,6 +392,12 @@ for line, n := range counts {
 			fmt.Printf("%d\t%s\n", n, line)
 		}
 	}
+	// NOTE: ignoring potential errors from input.Err()
+	for line, n := range counts {
+		if n > 1 {
+			fmt.Printf("%d\t%s\n", n, line)
+		}
+	}
 }
 
 //!-
