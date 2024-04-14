@@ -652,10 +652,7 @@ for line, n := range counts {
 }
 }
 
-//!-	counts := make(map[string]int)
-	counts := make(map[string]int)
-	counts := make(map[string]int)
-	counts := make(map[string]int)
+
 
 }
 
